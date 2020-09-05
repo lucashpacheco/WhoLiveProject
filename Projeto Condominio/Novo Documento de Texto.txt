@@ -1,0 +1,7 @@
+- Relatorios 
+
+Dados de moradores
+Moradores por apartamento
+Moradores com apartamento(todos)(agrupados)
+Todos os veiculos com apartamentos 
+Veiculos por apartamento
