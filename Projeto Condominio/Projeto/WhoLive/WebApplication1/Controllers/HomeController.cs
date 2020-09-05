@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication1.Controllers
+namespace WhoLiveApp.Controllers
 {
     public class HomeController : Controller
     {
@@ -20,7 +20,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Vehicles()
         {
             ViewBag.Message = "Your contact page.";
 
@@ -34,6 +34,20 @@ namespace WebApplication1.Controllers
             return View();
         }
         public ActionResult About()
+        {
+            ViewBag.Message = "Your about page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your about page.";
+
+            return View();
+        }
+        
+        public ActionResult Apartaments()
         {
             ViewBag.Message = "Your about page.";
 

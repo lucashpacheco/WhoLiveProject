@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{1C37C412-6BEB-413C-9BD8-F849B97F9399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoLiveAPP", "WebApplication1\WhoLiveAPP.csproj", "{1C37C412-6BEB-413C-9BD8-F849B97F9399}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

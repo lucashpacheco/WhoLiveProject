@@ -124,6 +124,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Apartament.cs" />
+    <Compile Include="Models\Vehicle.cs" />
+    <Compile Include="Models\Staffs.cs" />
     <Compile Include="Models\Resident.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -164,6 +167,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Residents.cshtml" />
+    <Content Include="Views\Home\Staffs.cshtml" />
+    <Content Include="Views\Home\Vehicles.cshtml" />
+    <Content Include="Views\Home\Apartaments.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
