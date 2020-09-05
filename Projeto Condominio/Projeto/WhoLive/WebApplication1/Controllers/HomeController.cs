@@ -13,9 +13,9 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Residents()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your residents page.";
 
             return View();
         }
@@ -26,5 +26,19 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult Staffs()
+        {
+            ViewBag.Message = "Your staffs page.";
+
+            return View();
+        }
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your about page.";
+
+            return View();
+        }
+
     }
 }
