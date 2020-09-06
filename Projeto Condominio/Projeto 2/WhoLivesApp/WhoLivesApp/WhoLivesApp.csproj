@@ -137,7 +137,9 @@
     </Compile>
     <Compile Include="Models\Apartament.cs" />
     <Compile Include="Models\ApContext.cs" />
+    <Compile Include="Models\ResContextIndex.cs" />
     <Compile Include="Models\ResContext.cs" />
+    <Compile Include="Models\ResidentIndex.cs" />
     <Compile Include="Models\Resident.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Models\StaContext.cs" />
@@ -185,7 +187,6 @@
     <Content Include="Views\Residents\Delete.cshtml" />
     <Content Include="Views\Residents\Details.cshtml" />
     <Content Include="Views\Residents\Edit.cshtml" />
-    <Content Include="Views\Residents\Index.cshtml" />
     <Content Include="Views\Apartaments\Create.cshtml" />
     <Content Include="Views\Apartaments\Delete.cshtml" />
     <Content Include="Views\Apartaments\Details.cshtml" />
@@ -201,6 +202,7 @@
     <Content Include="Views\Staffs\Details.cshtml" />
     <Content Include="Views\Staffs\Edit.cshtml" />
     <Content Include="Views\Staffs\Index.cshtml" />
+    <Content Include="Views\Residents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

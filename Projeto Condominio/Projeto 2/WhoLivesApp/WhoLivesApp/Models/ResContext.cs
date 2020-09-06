@@ -13,6 +13,9 @@ namespace WhoLivesApp.Models
 
         }
         public DbSet<Resident> Residents{ get; set; }
+
+        public System.Data.Entity.DbSet<WhoLivesApp.Models.ResidentIndex> ResidentIndexes { get; set; }
+        //public DbSet<ResidentIndex> Residents{ get; set; }
         //public DbSet.SQLQuery
 
     }

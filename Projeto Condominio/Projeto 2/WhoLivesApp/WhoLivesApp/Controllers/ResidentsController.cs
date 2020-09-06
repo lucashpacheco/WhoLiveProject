@@ -17,7 +17,11 @@ namespace WhoLivesApp.Controllers
         // GET: Residents
         public ActionResult Index()
         {
-            return View(db.Residents.ToList());
+            var residents = db.Database.SqlQuery<ResidentIndex>(
+                "select MOR_ID ,MOR_NOME, MOR_SOBRENOME , AP_NUMERO , FUN_NOME from dbo.Residents INNER JOIN dbo.Apartaments ON AP_ID = MOR_AP_ID INNER JOIN DBO.Staffs ON MOR_FUN_ID = FUN_ID"
+                );
+            //return View(db.Residents.ToList());
+            return View(residents.ToList());
         }
 
         // GET: Residents/Details/5

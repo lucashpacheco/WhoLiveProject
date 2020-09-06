@@ -1,13 +1,13 @@
-﻿@model IEnumerable<WhoLivesApp.Models.Resident>
+﻿@model IEnumerable<WhoLivesApp.Models.ResidentIndex>
 
 @{
-    ViewBag.Title = "Lista de Moradores";
+    ViewBag.Title = "Index";
 }
 
-<h2>Lista de Moradores</h2>
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink(" + Adicionar novo morador", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -18,10 +18,10 @@
             @Html.DisplayNameFor(model => model.MOR_SOBRENOME)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MOR_AP_ID)
+            @Html.DisplayNameFor(model => model.AP_NUMERO)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MOR_FUN_ID)
+            @Html.DisplayNameFor(model => model.FUN_NOME)
         </th>
         <th></th>
     </tr>
@@ -35,10 +35,10 @@
             @Html.DisplayFor(modelItem => item.MOR_SOBRENOME)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MOR_AP_ID)
+            @Html.DisplayFor(modelItem => item.AP_NUMERO)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MOR_FUN_ID)
+            @Html.DisplayFor(modelItem => item.FUN_NOME)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.MOR_ID }) |
