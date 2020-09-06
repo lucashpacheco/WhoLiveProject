@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WhoLivesApp.Models.Staff>
+
+@{
+    ViewBag.Title = "Lista de Funcionarios";
+}
+
+<h2>Lista de Funcionarios</h2>
+
+<p>
+    @Html.ActionLink(" + Adicionar novo funcionario", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FUN_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FUN_SOBRENOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FUN_CARGO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FUN_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FUN_SOBRENOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FUN_CARGO)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.FUN_ID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.FUN_ID }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.FUN_ID })
+        </td>
+    </tr>
+}
+
+</table>

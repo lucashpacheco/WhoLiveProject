@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WhoLiveApp.Models.Vehicle>
+
+@{
+    ViewBag.Title = "Lista de Veiculos";
+}
+
+<h2>Lista de Veiculos</h2>
+
+<p>
+    @Html.ActionLink("+ Adicionar novo veiculo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VEI_MOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VEI_COR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VEI_PLACA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VEI_AP_ID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VEI_MOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VEI_COR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VEI_PLACA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VEI_AP_ID)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.VEI_ID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.VEI_ID }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.VEI_ID })
+        </td>
+    </tr>
+}
+
+</table>

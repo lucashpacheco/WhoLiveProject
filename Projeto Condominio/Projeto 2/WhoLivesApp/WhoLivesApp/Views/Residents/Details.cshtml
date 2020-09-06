@@ -1,0 +1,50 @@
+﻿@model WhoLivesApp.Models.Resident
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resident</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MOR_NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOR_NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOR_SOBRENOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOR_SOBRENOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOR_AP_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOR_AP_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOR_FUN_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOR_FUN_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MOR_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

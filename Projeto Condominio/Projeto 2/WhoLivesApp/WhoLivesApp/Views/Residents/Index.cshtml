@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WhoLivesApp.Models.Resident>
+
+@{
+    ViewBag.Title = "Lista de Moradores";
+}
+
+<h2>Lista de Moradores</h2>
+
+<p>
+    @Html.ActionLink(" + Adicionar novo morador", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MOR_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOR_SOBRENOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOR_AP_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOR_FUN_ID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOR_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOR_SOBRENOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOR_AP_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOR_FUN_ID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MOR_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MOR_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MOR_ID })
+        </td>
+    </tr>
+}
+
+</table>

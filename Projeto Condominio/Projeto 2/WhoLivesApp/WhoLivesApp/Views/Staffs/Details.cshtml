@@ -1,0 +1,42 @@
+﻿@model WhoLivesApp.Models.Staff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Staff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FUN_NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FUN_NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FUN_SOBRENOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FUN_SOBRENOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FUN_CARGO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FUN_CARGO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FUN_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

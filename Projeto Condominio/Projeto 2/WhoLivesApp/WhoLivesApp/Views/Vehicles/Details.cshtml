@@ -1,0 +1,50 @@
+﻿@model WhoLiveApp.Models.Vehicle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI_MOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI_MOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI_COR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI_COR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI_PLACA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI_PLACA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI_AP_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI_AP_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VEI_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
