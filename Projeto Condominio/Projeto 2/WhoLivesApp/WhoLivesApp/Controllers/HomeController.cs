@@ -15,15 +15,26 @@ namespace WhoLivesApp.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "O que é WhoLive's ? ";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Em caso de nessecidade de suporte entre em contato";
 
+            return View();
+        }
+        public ActionResult Reports()
+        {
+            ViewBag.Message = "Escolha qual tipo de relatorio deseja exibir";
+
+            return View();
+        }
+
+        public ActionResult Report1() 
+        {
             return View();
         }
     }

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WhoLiveApp.Models.Report1>
+
+@{
+    ViewBag.Title = "Report1";
+}
+
+<h2>Report1</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AP_NUMERO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOR_NOME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AP_ATENCAO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AP_NUMERO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOR_NOME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AP_ATENCAO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MOR_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MOR_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MOR_ID })
+        </td>
+    </tr>
+}
+
+</table>

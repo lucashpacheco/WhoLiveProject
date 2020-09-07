@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Reports";
+}
+
+<h2>Reports</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<table class="table">
+
+    <tbody>
+        <tr>
+            <th>Relatório</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Moradores por apartamento  </td>
+            <td>@Html.ActionLink("Exibir", "Report1", "Reports")</td>
+        </tr>
+        <tr>
+            <td>Lotação dos apartamentos</td>
+            <td>@Html.ActionLink("Exibir", "Report2", "Index")</td>
+        </tr>
+        <tr>
+            <td>Veiculos apartamentos</td>
+            <td>@Html.ActionLink("Exibir", "Report3", "Index")</td>
+        </tr>
+        <tr>
+            <td>Apartamentos com necessidade especial</td>
+            <td>@Html.ActionLink("Exibir", "Report4", "Index")</td>
+        </tr>
+
+
+    </tbody>
+
+</table>
+
+
+
+
+
+
