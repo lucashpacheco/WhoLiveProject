@@ -6,18 +6,23 @@ using System.Web.Services.Description;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace WhoLiveApp.Models
+namespace WhoLivesApp.Models
 {
     public class Report2
     {
         [Key]
         public int AP_ID { get; set; }
 
-        //[Required(ErrorMessage = "Informe o numero do apartamento", AllowEmptyStrings = false)]
-        public int AP_NUMERO { get; set; }
+        public int Apartamento { get; set; }
 
-        //[Required(ErrorMessage = "Informe se o apartamento tem pessoas com necessidades especiais", AllowEmptyStrings = false)]
-        public bool AP_ATENCAO { get; set; }
+        public int Moradores { get; set; }
+
+        //[Key]
+        //public int AP_ID { get; set; }
+
+        //public int AP_NUMERO { get; set; }
+
+        //public bool AP_ATENCAO { get; set; }
 
 
     }

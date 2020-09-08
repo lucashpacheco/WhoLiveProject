@@ -6,7 +6,7 @@ using System.Web.Services.Description;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace WhoLiveApp.Models
+namespace WhoLivesApp.Models
 {
     public class Report1
     {
@@ -17,7 +17,13 @@ namespace WhoLiveApp.Models
 
         public string MOR_NOME { get; set; }
 
+        public string MOR_SOBRENOME { get; set; }
+
         public bool AP_ATENCAO { get; set; }
+
+        public string FUN_NOME { get; set; }
+
+
 
 
     }

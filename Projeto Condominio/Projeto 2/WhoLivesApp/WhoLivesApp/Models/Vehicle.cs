@@ -6,7 +6,7 @@ using System.Web.Services.Description;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace WhoLiveApp.Models
+namespace WhoLivesApp.Models
     {
         public class Vehicle
         {

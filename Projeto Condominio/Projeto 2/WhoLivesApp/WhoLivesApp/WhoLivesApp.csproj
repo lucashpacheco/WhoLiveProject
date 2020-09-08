@@ -136,9 +136,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Rep4Context.cs" />
     <Compile Include="Models\Rep3Context.cs" />
     <Compile Include="Models\Rep2Context.cs" />
     <Compile Include="Models\Rep1Context.cs" />
+    <Compile Include="Models\Report4.cs" />
     <Compile Include="Models\Report3.cs" />
     <Compile Include="Models\Report2.cs" />
     <Compile Include="Models\Report1.cs" />
@@ -146,7 +148,6 @@
     <Compile Include="Models\ApContext.cs" />
     <Compile Include="Models\ResContextIndex.cs" />
     <Compile Include="Models\ResContext.cs" />
-    <Compile Include="Models\Report1Index.cs" />
     <Compile Include="Models\ResidentIndex.cs" />
     <Compile Include="Models\Resident.cs" />
     <Compile Include="Models\Staff.cs" />
@@ -212,8 +213,11 @@
     <Content Include="Views\Staffs\Index.cshtml" />
     <Content Include="Views\Residents\Index.cshtml" />
     <Content Include="Views\Home\Reports.cshtml" />
-    <Content Include="Views\Reports\aaaaaa.cshtml" />
     <Content Include="Views\Reports\Report1.cshtml" />
+    <Content Include="Views\Reports\Report2.cshtml" />
+    <Content Include="Views\Reports\Report3.cshtml" />
+    <Content Include="Views\Reports\aaaa.cshtml" />
+    <Content Include="Views\Reports\aaaaaaaaaaa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

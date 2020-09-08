@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WhoLivesApp.Models.Report2>
+
+@{
+    ViewBag.Title = "Report2";
+}
+
+<h2>Relatório - Lotação dos apartamentos</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Apartamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Moradores)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apartamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Moradores)
+        </td>
+       
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Voltar pra relatórios", "Reports", "Home")
+</p>
